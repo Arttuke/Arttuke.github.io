@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="fi">
+<head>
+    <meta charset="utf-8" />
+    <title>Kissasivu</title>
+</head>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+    table {
+        width: 100%;
+    }
+    h1 {
+        color: #021212;
+        font-family: 'italiana';
+        font-size: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    p {
+        color: #44e6e6;
+        text-align: center;
+        font-family: 'fantasy', cursive, sans-serif;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .keskellä {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+    .menesivulle {
+        font-size: 30px;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        display: block;
+        margin-top: 20px;
+    }
+    .kissa-animaatio {
+        animation: kissa-animaatio 10s linear infinite;
+    }
+
+    @keyframes kissa-animaatio {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    .kissa7-container {
+        text-align: center;
+    }
+    .kissa7 {
+        width: 50%;
+        margin: 20px auto;
+        display: block;
+    }
+</style>
+<body>
+    <h1 style="background-color:#e8f0f1;">Kissoja</h1>
+    <p>Klikkaa alla olevaa kissaa</p>
+
+    <div class="kissa7-container">
+        <a href="kissasivu 2.html">
+            <img src="https://img.ilcdn.fi/zDy9VKtIbOG5ueupWn_1xd-NXG8=/full-fit-in/920x0/img-s3.ilcdn.fi/d6f24c9b236c7217c1f61929ce5c510ce6af099e1f374f316908724ac46f8963.jpg" alt="kissa jolla kieli ulkona" width="300" height="300">
+        </a>
+
+        <div class="kissa-animaatio">
+            <img src="https://media.tenor.com/kdKzIqlPJCcAAAAM/walking-halloween.gif" alt="liikkuvakissa" width="300" height="250">
+        </div>
+
+        <div>
+            <img src="https://static.wixstatic.com/media/6c7b64_aaaf3ba086da4c0ca50b37bff3e460b2~mv2.jpg" alt="kissa jolla paahtoleipä pään ympärillä" width="50" height="235" class="keskellä">
+        </div>
+    </div>
+
+    <div class="content"></div>
+    <div class="scroll-indicator">Scrollaa alaspäin</div>
+</body>
+</html>

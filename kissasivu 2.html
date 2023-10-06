@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toinen sivu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px;
+            background: linear-gradient(to right, white 50%, black 50%);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        .Tervetuloa {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: transparent;
+        }
+
+        .Tervetuloa::after {
+            content: "Tervetuloa";
+            background: linear-gradient(to right, rgb(8, 8, 8) 50%, rgb(255, 255, 255) 50%);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            padding: 10px;
+            font-size: 55px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .ekakappale {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0);
+            content: "Tässä on muutamia kuvia kissoista";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(18, 206, 175);
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+        .kissakuvatoisellasivulla1 {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 100%;
+            height: auto;
+        }
+
+        .wikipediaosuus {
+            position: absolute;
+            top: 150%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+
+        .nappula {
+            background-color: #3DD1E7;
+            border: 0 solid #E5E7EB;
+            box-sizing: border-box;
+            color: #000000;
+            display: flex;
+            font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 700;
+            justify-content: center;
+            line-height: 1.75rem;
+            padding: .75rem 1.65rem;
+            position: relative;
+            text-align: center;
+            text-decoration: none #000000 solid;
+            text-decoration-thickness: auto;
+            width: 100%;
+            max-width: 460px;
+            position: relative;
+            cursor: pointer;
+            transform: rotate(-2deg);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            left: 50%;
+            top: 70%;
+            transform: translateX(-50%);
+        }
+
+        .nappula:focus {
+            outline: 0;
+        }
+
+        .nappula:after {
+            content: '';
+            position: absolute;
+            border: 1px solid #000000;
+            bottom: 4px;
+            left: 4px;
+            width: calc(100% - 1px);
+            height: calc(100% - 1px);
+        }
+
+        .nappula:hover:after {
+            bottom: 2px;
+            left: 2px;
+        }
+
+        @media (min-width: 768px) {
+            .nappula {
+                padding: .75rem 3rem;
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Tervetuloa"></div>
+    <p class="ekakappale">Tällä sivulla<br>keskitytään<br>enemmän visuaaliseen<br>puoleen</p>
+    <img src="https://s.hdnux.com/photos/75/11/31/16029256/8/rawImage.jpg" alt="kissakuvatoisellasivulla1" width="320" height="235" class="kissakuvatoisellasivulla1">
+    <p class="wikipediaosuus"><a href="https://fi.wikipedia.org/wiki/Kissa" target="_blank">Lue tästä lisää kissoista Wikipedian kautta </a></p>
+    <a href="kissasivu 1.html">
+        <button type="nappula" class="nappula">Tästä ensimmäiselle sivulle</button>
+    </a>
+</body>
+</html>
